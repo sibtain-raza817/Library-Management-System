@@ -1,6 +1,3 @@
-/* ========================= */
-/* 🌐 GLOBAL RESET */
-/* ========================= */
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* ========================= */
-/* 🔵 HEADER */
-/* ========================= */
+/* HEADER */
 .header {
     width: 100%;
     height: 100px;
@@ -34,7 +29,6 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 .header-left span {
@@ -52,43 +46,28 @@ body {
     text-decoration: none;
     font-size: 20px;
     color: white;
-    font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 .header-right a:hover {
-    color: #0a0e0e;
+    color: black;
 }
 
-/* ========================= */
-/* 🖼️ BANNER */
-/* ========================= */
+/* BANNER */
 .banner {
     width: 100%;
     height: calc(100vh - 100px);
     position: relative;
-    overflow: hidden;
 }
 
-/* Background image */
 .banner-img img {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-/* Dark overlay */
-.banner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-}
-
-/* Banner text */
+/* banner text */
 .banner-content {
     position: relative;
     z-index: 1;
@@ -108,28 +87,20 @@ body {
 
 .banner-content p {
     font-size: 18px;
-    line-height: 1.6;
     margin-bottom: 25px;
 }
 
-/* ========================= */
-/* 🔘 BUTTONS */
-/* ========================= */
+/* buttons */
 .banner-buttons {
     display: flex;
     gap: 20px;
 }
 
-.btn,
-.btn-outline {
+.btn {
     text-decoration: none;
     padding: 12px 28px;
     font-weight: 600;
     border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.btn {
     background-color: rgb(128, 228, 246);
     color: black;
 }
@@ -139,6 +110,10 @@ body {
 }
 
 .btn-outline {
+    text-decoration: none;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 5px;
     border: 2px solid white;
     color: white;
 }
@@ -148,29 +123,8 @@ body {
     color: black;
 }
 
-.select-topic {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-}
-
-#text-select {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: 400;
-    color: rgb(45, 44, 44);
-
-}
-
-
-/* start form here book panel */
-
+/* TOPIC SECTION */
 .select-topic {
     padding: 60px 20px;
     text-align: center;
@@ -179,234 +133,70 @@ body {
 .select-topic h3 {
     font-size: 28px;
     margin-bottom: 40px;
-    font-weight: 600;
 }
 
-/* Container */
 .select-box {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-/* Individual box */
-.select-box .box {
+.box {
     width: 15rem;
-    padding: 25px 20px;
+    padding: 25px;
     border-radius: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
     text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-/* Hover effect */
-.select-box .box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.box:hover {
+    margin-top: -8px;
 }
 
-/* Image */
-.select-box .box-img {
+.box-img {
     width: 80px;
     height: 80px;
-    object-fit: contain;
     margin-bottom: 15px;
 }
 
-/* Text */
-.select-box .box p {
+.box p {
     font-size: 20px;
-    font-weight: 500;
-    color: #333;
 }
 
-/* Book section css */
-
-
-
-
+/* BOOKS */
 .popular-collections {
     padding: 60px 40px;
 }
 
-.popular-collections h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.section-desc {
-    max-width: 700px;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-/* Category buttons */
-.category-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-.category-buttons button {
-    padding: 10px 22px;
-    border-radius: 25px;
-    border: 1px solid #888;
-    background: transparent;
-    cursor: pointer;
-    font-size: 15px;
-    transition: all 0.3s ease;
-}
-
-.category-buttons button:hover,
-.category-buttons .active {
-    background-color: rgb(128, 228, 246);
-    border-color: rgb(128, 228, 246);
-}
-
-/* Book grid */
 .book-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
 }
 
-/* Book card */
 .book-card {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
 }
 
 .book-card:hover {
-    transform: translateY(-6px);
+    margin-top: -6px;
 }
 
 .book-card img {
     width: 100%;
     height: 280px;
-    object-fit: contain;
     margin-bottom: 15px;
 }
 
 .book-card p {
     font-size: 14px;
-    color: #333;
-    line-height: 1.5;
 }
 
-
-@media (max-width: 768px) {
-    .select-topic h3 {
-        font-size: 24px;
-    }
-
-    .select-box {
-        gap: 20px;
-    }
-
-    .select-box .box {
-        width: 100%;
-        max-width: 280px;
-    }
-}
-
-.footer {
-    background: #3f4b55;
-    color: #fff;
-    padding: 50px 80px 20px;
-    font-family: Arial, sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.footer-col {
-    flex: 1;
-}
-
-.footer h3 {
-    margin-bottom: 15px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-
-.footer p {
-    line-height: 1.6;
-    font-size: 14px;
-}
-
-.footer a {
-    color: #4da3ff;
-    text-decoration: none;
-}
-
-.search-box {
-    display: flex;
-    margin: 15px 0;
-}
-
-.search-box input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-}
-
-.search-box button {
-    padding: 10px 15px;
-    border: none;
-    background: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-.footer-btns {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.footer-btns .green {
-    background: transparent;
-    border: 1px solid #28a745;
-    color: #28a745;
-    padding: 8px 12px;
-}
-
-.footer-btns .dark {
-    background: #222;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-}
-
-.footer-bottom {
-    border-top: 1px solid #555;
-    margin-top: 40px;
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
+/* CATEGORIES */
 .categories-section {
     padding: 60px 20px;
     background: #f4f6f9;
@@ -424,83 +214,47 @@ body {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s;
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
+    margin-top: -5px;
     background: #e3f2fd;
 }
 
-/* Responsive */
+/* FOOTER */
+.footer {
+    background: #3f4b55;
+    color: #fff;
+    padding: 50px 80px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    margin-top: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-
-/* This is responsive for main section */
-@media (max-width: 1024px) {
     .banner-content {
-        padding-left: 40px;
-    }
-
-    .banner-content h1 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner {
-        height: 70vh;
-    }
-
-    .banner-content {
-        max-width: 100%;
-        padding: 0 30px;
+        padding: 30px;
         text-align: center;
-        align-items: center;
-    }
-
-    .banner-content h1 {
-        font-size: 34px;
-    }
-
-    .banner-content p {
-        font-size: 16px;
     }
 
     .banner-buttons {
         flex-direction: column;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner {
-        height: 60vh;
-    }
-
-    .banner-content h1 {
-        font-size: 28px;
-    }
-
-    .banner-content p {
-        font-size: 15px;
-    }
-
-    .btn,
-    .btn-outline {
-        width: 100%;
-        text-align: center;
     }
 }
