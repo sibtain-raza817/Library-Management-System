@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,174 +15,178 @@
 
 <body>
 
-<header class="header">
-    <nav class="header-left">
-        <img src="lib2.png" alt="Library logo" id="icon" />
-        <span>Online Library</span>
-    </nav>
+    <header class="header">
+        <nav class="header-left">
+            <img src="lib2.png" alt="Library logo" id="icon" />
+            <span>Online Library</span>
+        </nav>
 
-    <nav class="header-right">
-        <a href="#home">Home</a>
-        <a href="#information">Information</a>
-        <a href="#book">Books</a>
-        <a href="#categories">Categories</a>
-    </nav>
-</header>
+        <nav class="header-right">
+            <a href="#home">Home</a>
+            <a href="#information">Information</a>
+            <a href="#book">Books</a>
+            <a href="#categories">Categories</a>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-<!-- HOME -->
-<section class="banner" id="home">
-    <div class="banner-content">
-        <h1>Welcome to Online Library</h1>
-        <p>
-            Explore thousands of books and manage library
-            records easily in one place.
-        </p>
+        <!-- HOME -->
+        <section class="banner" id="home">
+            <div class="banner-content">
+                <h1>Welcome to Online Library</h1>
+                <p>
+                    Explore thousands of books and manage library
+                    records easily in one place.
+                </p>
 
-        <div class="banner-buttons">
-            <a href="#book" class="btn">View Books</a>
-            <a href="#categories" class="btn-outline">Categories</a>
-        </div>
-    </div>
+                <div class="banner-buttons">
+                    <a href="#book" class="btn">View Books</a>
+                    <a href="#categories" class="btn-outline">Categories</a>
+                </div>
+            </div>
 
-    <figure class="banner-img">
-        <img src="lib1.jpg" alt="Library interior with books">
-    </figure>
-</section>
+            <figure class="banner-img">
+                <img src="lib1.jpg" alt="Library interior with books">
+            </figure>
+        </section>
 
-<!-- INFORMATION -->
-<section class="select-topic" id="information">
-    <h3 id="topic-title">Select the topic you are interested in</h3>
+        <!-- INFORMATION -->
+        <section class="select-topic" id="information">
+            <h3 id="topic-title">Select the topic you are interested in</h3>
 
-    <div class="select-box">
-        <article class="box">
-            <img src="images/image.png" alt="Literature" class="box-img">
-            <p>Literature</p>
-        </article>
+            <div class="select-box">
+                <article class="box">
+                    <img src="images/image.png" alt="Literature" class="box-img">
+                    <p>Literature</p>
+                </article>
 
-        <article class="box">
-            <img src="images/3-diploma.png" alt="Social Science" class="box-img">
-            <p>Social Science</p>
-        </article>
+                <article class="box">
+                    <img src="images/3-diploma.png" alt="Social Science" class="box-img">
+                    <p>Social Science</p>
+                </article>
 
-        <article class="box">
-            <img src="images/6-blackboard.png" alt="Applied Science" class="box-img">
-            <p>Applied Science</p>
-        </article>
+                <article class="box">
+                    <img src="images/6-blackboard.png" alt="Applied Science" class="box-img">
+                    <p>Applied Science</p>
+                </article>
 
-        <article class="box">
-            <img src="images/computer.jpg" alt="Algorithms" class="box-img">
-            <p>Algorithms</p>
-        </article>
-    </div>
-</section>
+                <article class="box">
+                    <img src="images/computer.jpg" alt="Algorithms" class="box-img">
+                    <p>Algorithms</p>
+                </article>
+            </div>
+        </section>
 
-<!-- BOOKS -->
-<section class="popular-collections" id="book">
-    <h2>Popular among our collections</h2>
+        <!-- BOOKS -->
+        <section class="popular-collections" id="book">
+            <h2>Popular among our collections</h2>
 
-    <p class="section-desc">
-        Our library's line of collection that have been favored by our users were shown here.
-        Look for them. Borrow them. Hope you also like them
-    </p>
-
-    <div class="book-grid">
-        <article class="book-card">
-            <img src="images/PostgreSQl.jpg" alt="PostgreSQL book">
-            <p>PostgreSQL : a comprehensive guide to building, programming, and administering PostgreSQL databases</p>
-        </article>
-
-        <article class="book-card">
-            <img src="images/Ajax.jpg" alt="AJAX book">
-            <p>Ajax : creating Web pages with asynchronous JavaScript and XML</p>
-        </article>
-
-        <article class="book-card">
-            <img src="images/web.jpg" alt="Web architecture book">
-            <p>Web application architecture : principles, protocols, and practices</p>
-        </article>
-
-        <article class="book-card">
-            <img src="images/information.jpg" alt="Information architecture book">
-            <p>Information Architecture for the World Wide Web</p>
-        </article>
-
-        <article class="book-card">
-            <img src="images/Producing.jpg" alt="Open source book">
-            <p>Producing open source software : how to run a successful free software project</p>
-        </article>
-
-        <article class="book-card">
-            <img src="images/library-information.jpg" alt="Library management book">
-            <p>Library and Information Center Management</p>
-        </article>
-    </div>
-</section>
-
-<!-- CATEGORIES -->
-<section id="categories" class="categories-section">
-    <h2>Categories Of Books</h2>
-    <p>Select a category to explore books</p>
-
-    <div class="category-grid">
-        <div class="category-card">Programming</div>
-        <div class="category-card">Web Development</div>
-        <div class="category-card">Databases</div>
-        <div class="category-card">Operating Systems</div>
-        <div class="category-card">AI & Machine Learning</div>
-        <div class="category-card">Cyber Security</div>
-        <div class="category-card">Computer Networks</div>
-        <div class="category-card">Algorithms</div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-container">
-
-        <div class="footer-col">
-            <h3>Demo Library</h3>
-            <ul>
-                <li>Information</li>
-                <li>Services</li>
-                <li>Librarian</li>
-                <li>Member Area</li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>About Us</h3>
-            <p>
-                This free online library management system was built by Ai Nguyen
-                based on the SLiMS platform. Readers can view books and make an
-                appointment to borrow online.
+            <p class="section-desc">
+                Our library's line of collection that have been favored by our users were shown here.
+                Look for them. Borrow them. Hope you also like them
             </p>
-            <a href="#">View more</a>
-        </div>
 
-        <div class="footer-col">
-            <h3>Search</h3>
-            <p>Start it by typing one or more keywords</p>
+            <div class="book-grid">
+                <article class="book-card">
+                    <img src="images/PostgreSQl.jpg" alt="PostgreSQL book">
+                    <p>PostgreSQL : a comprehensive guide to building, programming, and administering PostgreSQL
+                        databases</p>
+                </article>
 
-            <div class="search-box">
-                <input type="text" placeholder="Enter keywords">
-                <button>Find Collection</button>
+                <article class="book-card">
+                    <img src="images/Ajax.jpg" alt="AJAX book">
+                    <p>Ajax : creating Web pages with asynchronous JavaScript and XML</p>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/web.jpg" alt="Web architecture book">
+                    <p>Web application architecture : principles, protocols, and practices</p>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/information.jpg" alt="Information architecture book">
+                    <p>Information Architecture for the World Wide Web</p>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/Producing.jpg" alt="Open source book">
+                    <p>Producing open source software : how to run a successful free software project</p>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/library-information.jpg" alt="Library management book">
+                    <p>Library and Information Center Management</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section id="categories" class="categories-section">
+            <h2>Categories Of Books</h2>
+            <p>Select a category to explore books</p>
+
+            <div class="category-grid">
+                <div class="category-card">Programming</div>
+                <div class="category-card">Web Development</div>
+                <div class="category-card">Databases</div>
+                <div class="category-card">Operating Systems</div>
+                <div class="category-card">AI & Machine Learning</div>
+                <div class="category-card">Cyber Security</div>
+                <div class="category-card">Computer Networks</div>
+                <div class="category-card">Algorithms</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-col">
+                    <h3>Demo Library</h3>
+                    <ul>
+                        <li>Information</li>
+                        <li>Services</li>
+                        <li>Librarian</li>
+                        <li>Member Area</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>This free online library system allows readers to view books and request them online.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Search</h3>
+                    <div class="search-box">
+                        <input type="text" id="find-box" placeholder="Enter keywords">
+                        <button id="find-btn">Find Collection</button>
+                    </div>
+                </div>
+
+                <!-- BOOK ISSUE FORM -->
+                <div class="footer-col">
+                    <h3>Issue a Book</h3>
+
+                    <form id="issueForm" class="issue-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="bookIssue" placeholder="Book Name" required>
+                        <input type="date" id="date" required>
+                        <button type="submit">Request Book</button>
+                    </form>
+                </div>
+
             </div>
 
-            <div class="footer-btns">
-                <button class="green">Keep Digilib Alive</button>
-                <button class="dark">Find out more</button>
+            <div class="footer-bottom">
+                <p>© 2026 — DigiLib - Library Management Online</p>
+                <span>Powered by <b>Sibtain Raza</b></span>
             </div>
-        </div>
+        </footer>
+    </main>
 
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 — DigiLib - Library Management Online</p>
-        <span>Powered by <b>Sibtain Raza</b></span>
-    </div>
-</footer>
-
-</main>
+    <script src="app.js"></script>
 </body>
+
 </html>
